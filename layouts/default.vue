@@ -94,6 +94,16 @@ export default {
   components: {
     TopHeader,
     BottomFooter
+  },
+  data() {
+    return {
+      org_name: 'Camp Roosevelt-Firebird',
+      phone_no: '(740)-269-0137',
+      contact_email: 'joe@camprooseveltfirebird.com',
+      street_addres: '',
+      rootUrl: 'https://dev3.ovswebsites.com',
+      baseUrl: process.env.rootUrl
+    }
   }
 }
 </script>
