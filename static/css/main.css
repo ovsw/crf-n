@@ -1192,32 +1192,17 @@ button {
 .tdTopWrapper ul li a#b.tdButtonSelected {
   color: white;
   border-color: #5c84ac;
-  background: -webkit-linear-gradient(top, #6e99c4 12%, #2a5bc1 85%);
-  background: -moz-linear-gradient(top, #6e99c4 12%, #2a5bc1 85%);
-  background: -o-linear-gradient(top, #6e99c4 12%, #2a5bc1 85%);
-  background: -ms-linear-gradient(top, #6e99c4 12%, #2a5bc1 85%);
-  background: linear-gradient(top, #6e99c4 12%, #2a5bc1 85%);
-  -pie-background: linear-gradient(top, #6e99c4 12%, #2a5bc1 85%);
+  background: linear-gradient(to bottom, #6e99c4 12%, #2a5bc1 85%);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 .tdTopWrapper ul li a#g.tdButtonSelected {
-  -pie-background: linear-gradient(top, #fa49cb 12%, #e6008a 85%);
-  background: -moz-linear-gradient(top, #fa49cb 12%, #e6008a 85%);
-  background: -ms-linear-gradient(top, #fa49cb 12%, #e6008a 85%);
-  background: -o-linear-gradient(top, #fa49cb 12%, #e6008a 85%);
-  background: -webkit-linear-gradient(top, #fa49cb 12%, #e6008a 85%);
-  background: linear-gradient(top, #fa49cb 12%, #e6008a 85%);
+  background: linear-gradient(to bottom, #fa49cb 12%, #e6008a 85%);
   border-color: #ffa3b5;
   color: white;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 .tdTopWrapper ul.ageSelector li a.tdButtonSelected {
-  -pie-background: linear-gradient(top, #71c138 14%, #3d821d 88%);
-  background: -moz-linear-gradient(top, #71c138 14%, #3d821d 88%);
-  background: -ms-linear-gradient(top, #71c138 14%, #3d821d 88%);
-  background: -o-linear-gradient(top, #71c138 14%, #3d821d 88%);
-  background: -webkit-linear-gradient(top, #71c138 14%, #3d821d 88%);
-  background: linear-gradient(top, #71c138 14%, #3d821d 88%);
+  background: linear-gradient(to bototm, #71c138 14%, #3d821d 88%);
   border-color: #73b448;
   color: white;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
@@ -1255,12 +1240,7 @@ button {
 }
 .slideshowNavWrap .slideshownavWrapper2 {
   /* background: green url('../images/tdNav_bg.gif'); */
-  -pie-background: linear-gradient(top, #5b7a2e 20%, #4a6425 80%);
-  background: -moz-linear-gradient(top, #5b7a2e 20%, #4a6425 80%);
-  background: -ms-linear-gradient(top, #5b7a2e 20%, #4a6425 80%);
-  background: -o-linear-gradient(top, #5b7a2e 20%, #4a6425 80%);
-  background: -webkit-linear-gradient(top, #5b7a2e 20%, #4a6425 80%);
-  background: linear-gradient(top, #5b7a2e 20%, #4a6425 80%);
+  background: linear-gradient(to bottom, #5b7a2e 20%, #4a6425 80%);
   margin: 0 0 0 0;
   overflow: hidden;
 }
@@ -1283,12 +1263,7 @@ button {
   margin-right: 0;
 }
 .slideshowNavWrap ul li a {
-  -pie-background: linear-gradient(top, #d3c086 20%, #e9e9c3 80%);
-  background: -moz-linear-gradient(top, #d3c086 20%, #e9e9c3 80%);
-  background: -ms-linear-gradient(top, #d3c086 20%, #e9e9c3 80%);
-  background: -o-linear-gradient(top, #d3c086 20%, #e9e9c3 80%);
-  background: -webkit-linear-gradient(top, #d3c086 20%, #e9e9c3 80%);
-  background: linear-gradient(top, #d3c086 20%, #e9e9c3 80%);
+  background: linear-gradient(to bottom, #d3c086 20%, #e9e9c3 80%);
   border-radius: 4px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
   color: #4a2611;
@@ -1315,12 +1290,7 @@ button {
   top: 1px;
 }
 .slideshowNavWrap ul li.activeSlide a {
-  -pie-background: linear-gradient(#d65606 20%, #f3761e 80%);
-  background: -moz-linear-gradient(top, #d65606 20%, #f3761e 80%);
-  background: -ms-linear-gradient(top, #d65606 20%, #f3761e 80%);
-  background: -o-linear-gradient(top, #d65606 20%, #f3761e 80%);
-  background: -webkit-linear-gradient(top, #d65606 20%, #f3761e 80%);
-  background: linear-gradient(top, #d65606 20%, #f3761e 80%);
+  background: linear-gradient(to bottom, #d65606 20%, #f3761e 80%);
   border: 1px solid #f58d47;
   color: white;
   height: 43px;
