@@ -1,0 +1,192 @@
+.hamburger--accessible {
+  display: inline-block;
+}
+.hamburger--accessible .hamburger-box {
+  display: inline-block;
+  vertical-align: middle;
+}
+.hamburger-label {
+  font-weight: 600;
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.header {
+  background: url("/images/topbanner2.png") repeat-x center top,
+    url("/images/warm-wood.jpg") center top;
+  margin: 0 1%;
+  min-height: 230px;
+  padding-top: 1px;
+  width: 98%;
+  position: relative;
+}
+
+@media only screen and (max-width: 780px) {
+  .menuBgLeft {
+    display: none;
+  }
+}
+/*Header*/
+.topHeaderWrapper {
+  background: url("/images/topbanner2.png") repeat-x center top;
+  height: 43px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.has-paperNoteBg {
+  background: url("/images/leftheaderbanner.png") no-repeat center top;
+  padding: 25px 10px 20px 10px;
+  min-height: 100px;
+  min-width: 137px;
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  text-decoration: none;
+}
+.has-wood-btn-background {
+  background: url("/images/rightheaderbanner.png") no-repeat center
+    center;
+  background-size: 100% 100%;
+  padding: 25px 30px 30px 30px;
+  font-family: "Fira Sans", sans-serif;
+  text-decoration: none;
+  &:hover {
+    background-color: green;
+  }
+}
+
+.centertopHeader {
+  right: 33%;
+  top: 0;
+  width: 35%;
+}
+#title {
+  left: 18%;
+  position: absolute;
+  top: 16%;
+  width: 60%;
+  z-index: 3;
+}
+.righttopHeader {
+  color: #d9c8b5;
+  font-size: 14px;
+  right: 0;
+
+  top: 7px;
+  white-space: nowrap;
+  width: 35%;
+}
+.righttopHeader a {
+  color: #fef8e0;
+  font-size: 20px;
+  padding: 0 10px;
+}
+.righttopHeader a:hover {
+  color: #f1b775;
+}
+
+.rightHeaderContent span {
+  /* border-bottom: 4px solid #3B271C; */
+  color: #49210b;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.rightHeaderContent:hover span {
+  color: #14204a;
+  /* border-bottom: 4px solid #CE0909; */
+}
+
+.searchWrapper {
+  left: 12%;
+  position: absolute;
+  top: 9px;
+  min-width: 150px;
+  z-index: 999;
+  text-align: center;
+}
+.searchWrapper a {
+  color: #fef8e0;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.navBanner {
+  background: url("/images/navbar.png") no-repeat;
+  clear: both;
+  margin-top: 155px;
+  min-height: 83px;
+  padding-top: 1px;
+  position: relative;
+}
+
+#mainMenu {
+  font-size: 18px;
+  list-style: none outside;
+  margin: 22px 0 0;
+  padding: 0;
+  /* text-align: center; */
+  text-shadow: 1px 1px 2px #000;
+  text-transform: uppercase;
+  z-index: 8010;
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+}
+#mainMenu ul {
+  text-shadow: none;
+}
+#mainMenu li {
+  display: inline;
+  line-height: 2em;
+  margin: 0;
+  padding: 0;
+}
+#mainMenu li a {
+  /* white-space: nowrap; */
+  /*border: 1px dashed #445C23;*/
+  border-radius: 4px;
+  color: #d7cdb3;
+  line-height: 1.1em;
+  text-decoration: none;
+}
+#mainMenu li a span {
+  display: inline-block;
+}
+#mainMenu li a:hover {
+  background-color: DarkRed;
+  color: #eaeaea;
+}
+#mainMenu .active > a {
+  background-color: DarkRed;
+  color: #eaeaea;
+}
+
+#leftBanner,
+#rightBanner {
+  height: 105px;
+  position: absolute;
+  top: 0;
+  width: 115px;
+}
+#leftBanner {
+  background: url("/images/leftnavBanner.png") no-repeat left top;
+  left: 0;
+  margin-left: -112px;
+  z-index: 2;
+}
+#rightBanner {
+  background: url("/images/rightnavBanner.png") no-repeat left top;
+  margin-right: -114px;
+  right: 0;
+  z-index: 1;
+}
+
+/* RESPONSIVE */

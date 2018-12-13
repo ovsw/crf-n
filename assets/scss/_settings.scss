@@ -1,0 +1,20 @@
+// CUSTOM STYLES
+
+// colors
+$crf-red: #de1e25;
+$crf-red-invert: findColorInvert($crf-red);
+$crf-blue: #14204a;
+
+$primary: $crf-red;
+$link: $crf-red;
+$link-invert: $crf-red-invert;
+
+$button-text-color: #49210b;
+$button-text-hover-background-color: transparent;
+// fonts
+
+$family-heading: "Sue Ellen Francisco", cursive;
+$family-body: "Montserrat", sans-serif;
+
+$family-primary: $family-body;
+$family-secondary: $family-heading;
