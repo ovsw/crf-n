@@ -42,8 +42,9 @@
       <div 
         v-editable="blok">
         <component 
-          v-for="section in blok.body" 
-          :key="section._uid" 
+          v-for="(section,index) in blok.body" 
+          :key="section._uid"
+          :index="index" 
           :section="section" 
           :is="section.component"/>
       </div>

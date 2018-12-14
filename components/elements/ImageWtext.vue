@@ -6,10 +6,12 @@
     <img 
       :alt="section.image_description" 
       :src="section.image | resize('320x270/smart/filters:quality(80)')" 
-      class="left">
-    <h2>Fun Summer Camp Activities</h2>
+      :class="{'left': index % 2 === 0, 'right': index % 2 !== 0 }">
+      
+    <h2 v-if="section.title" >{{ section.title }}</h2>
+    
     <div 
-      class="right"
+      :class="{'right': index % 2 === 0, 'left': index % 2 !== 0 }"
       v-html="textm"/>
   </div>
 </template>
@@ -23,6 +25,12 @@ export default {
       type: Object,
       default: function() {
         return {}
+      }
+    },
+    index: {
+      type: Number,
+      default: function() {
+        return 0
       }
     }
   },
