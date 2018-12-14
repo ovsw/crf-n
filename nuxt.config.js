@@ -35,13 +35,41 @@ module.exports = {
   css: [
     //{ src: '~/assets/scss/bulma.scss', lang: 'scss' },
     //{ src: '~/assets/scss/main.scss', lang: 'scss' },
-    { src: '~/static/css/main.css', lang: 'css' }
+    { src: '~/static/css/main.css', lang: 'css' },
+    { src: 'jquery.mmenu/dist/jquery.mmenu.css', lang: 'css' },
+    {
+      src: 'jquery.mmenu/dist/addons/searchfield/jquery.mmenu.searchfield.css',
+      lang: 'css'
+    },
+    // {
+    //   src:
+    //     'jquery.mmenu/dist/extensions/fullscreen/jquery.mmenu.fullscreen.css',
+    //   lang: 'css'
+    // },
+    // {
+    //   src:
+    //     'jquery.mmenu/dist/extensions/positioning/jquery.mmenu.positioning.css',
+    //   lang: 'css'
+    // },
+    // {
+    //   src:
+    //     'jquery.mmenu/dist/extensions/borderstyle/jquery.mmenu.borderstyle.css',
+    //   lang: 'css'
+    // },
+    {
+      src: 'jquery.mmenu/dist/addons/navbars/jquery.mmenu.navbars.css',
+      lang: 'css'
+    }
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: ['~plugins/components', '~plugins/helper.js'],
+  plugins: [
+    '~plugins/components',
+    '~plugins/helper.js',
+    { src: '~/plugins/mmenu.js', ssr: false }
+  ],
 
   /*
   ** Nuxt.js modules 
@@ -77,6 +105,15 @@ module.exports = {
         }
       }
     },
+    plugins: [
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        jquery: 'jquery',
+        'window.jQuery': 'jquery'
+        // ...etc.
+      })
+    ],
     /*
     ** You can extend webpack config here
     */

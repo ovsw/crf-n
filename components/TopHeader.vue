@@ -2,6 +2,8 @@
   <header>
     <div class="header">
 
+      <mobile-nav/>
+
       <div class="searchWrapper">
         <a 
           :href="'tel:'+phone_no" 
@@ -34,10 +36,10 @@
       <!--end rightHeader-->
 
       <div class="righttopHeader">
-        <a 
+        <!-- <a 
           href="https://www.ultracamp.com/clientlogin.aspx?idCamp=426&amp;campCode=CFR" 
-          target="_blank">UltraCamp login </a> |
-        <a href="#">Search Website</a>
+          target="_blank">UltraCamp login </a> | -->
+        <!-- <a href="#">Search Website</a> -->
         <!--  | <a href="<?= $pages->get(1053)->url ?>">Blog</a> -->
       </div>
       <!--end righttopHeader-->
@@ -48,12 +50,14 @@
           <ul 
             id="mainMenu" 
             class="mainMenu sm sm-clean">
-            <nuxt-link 
+            <!-- <nuxt-link 
               tag="li" 
               to="/" 
-              exact>
-              <a>Home</a>
-            </nuxt-link>
+              exact> -->
+            <li>
+              <mobile-burger />
+            </li>
+            <!-- </nuxt-link> -->
             <!-- <main-nav-item 
               v-for="item in mainNav" 
               :model="item" 
@@ -73,12 +77,14 @@
 </template>
 
 <script>
-import MainNavItem from '~/components/elements/MainNavItem.vue'
+import MobileNav from '@/components/elements/MobileNav.vue'
+import MobileBurger from '@/components/elements/MobileBurger.vue'
 
 export default {
   name: 'Header',
   components: {
-    MainNavItem
+    MobileNav,
+    MobileBurger
   },
   data() {
     return {
