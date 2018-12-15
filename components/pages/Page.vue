@@ -38,12 +38,13 @@
         <div class="videoBoxInner">
           <a 
             href="https://www.youtube.com/watch?v=_2PDV-OWwP8&amp;autoplay=1&amp;rel=0" 
-            class="mainVideo"> <img 
+            class="mainVideo"> 
+            <img 
               id="videoBackgroundInner" 
-              src="/site/templates/images/video_bg.png" 
+              src="/images/video_bg.png" 
               alt=""> <img 
                 id="movieFilmInner" 
-                src="/site/templates/images/movieFilm.png" 
+                src="/images/movieFilm.png" 
                 alt="">
             <span>Watch Our Video</span>
           </a>
@@ -54,7 +55,7 @@
             <a href="https://www.camprooseveltfirebird.com/learn-about-camp/you-can-trust-us/helping-kids-grow/">
               <img 
                 id="campDayInner" 
-                src="/site/templates/images/helping-kids-grow.png" 
+                src="/images/helping-kids-grow.png" 
                 alt="Growing at Camp Roosevelt-Firebird"> <span>Helping Kids Grow</span>
             </a>
           </li>
@@ -62,7 +63,7 @@
             <a href="/learn-about-camp/camp-environment/">
               <img 
                 id="interactiveMapInner" 
-                src="/site/templates/images/camp-environment.png" 
+                src="/images/camp-environment.png" 
                 alt="Fun Environment at Camp Roosevelt-Firebird"> <span>Camp Environment</span>
             </a>
           </li>
@@ -71,7 +72,7 @@
               href="/fullscreen-gallery/" 
               target="_blank"> <img 
                 id="photoGalleryInner" 
-                src="/site/templates/images/photoGaleryInner.png" 
+                src="/images/photoGaleryInner.png" 
                 alt="Gallery Button">
               <span>View our Photo Gallery</span>
             </a>
