@@ -12,12 +12,16 @@
 
 
     <div class="contentRight">
-      <div class="headerImageWrapper">
+
+      <div 
+        v-if="content.banner_image" 
+        class="headerImageWrapper">
         <img 
-          class="photo" 
-          src="/site/assets/files/2060/image00.-banner_size.jpg" 
-          alt="">
+          :src="content.banner_image | resize('601x248/smart/filters:quality(80)')" 
+          :alt="content.banner_alt" 
+          class="photo">
       </div>
+
       <div class="mainContentInner">
         <h1 v-editable="content">{{ content.main_heading }}</h1>
         <component 
