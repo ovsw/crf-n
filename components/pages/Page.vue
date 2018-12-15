@@ -14,8 +14,10 @@
     <div class="contentRight">
 
       <div 
-        v-if="content.banner_image" 
-        class="headerImageWrapper">
+        v-editable="content" 
+        v-if="content.banner_image"
+        class="headerImageWrapper"
+      >
         <img 
           :src="content.banner_image | resize('601x248/smart/filters:quality(80)')" 
           :alt="content.banner_alt" 
