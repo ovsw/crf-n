@@ -1,7 +1,7 @@
 <template>
   <figure 
     v-editable="blok" 
-    :class="blok.alignment[0]">
+    :class="blok.alignment">
     <img 
       :src="blok.image | resize(image_size+'x0/smart/filters:quality(80)')" 
       :alt="blok.alt_text">
@@ -21,7 +21,7 @@ export default {
   },
   computed: {
     image_size() {
-      switch (this.blok.alignment[0]) {
+      switch (this.blok.alignment) {
         case 'img_left':
           return '291'
           break
