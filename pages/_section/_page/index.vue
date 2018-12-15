@@ -2,9 +2,10 @@
   <component 
     v-if="story.content.component"
     :key="story.content._uid" 
-    :blok="story.content" 
+    :content="story.content" 
     :is="story.content.component"/>
 </template>
+
 
 <script>
 import storyblokLivePreview from '@/mixins/storyblokLivePreview.js'
