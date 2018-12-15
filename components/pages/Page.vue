@@ -18,11 +18,10 @@
           src="/site/assets/files/2060/image00.-banner_size.jpg" 
           alt="">
       </div>
-      <div 
-        v-editable="blok"
-        class="mainContentInner">
+      <div class="mainContentInner">
+        <h1 v-editable="content">{{ content.main_heading }}</h1>
         <component 
-          v-for="blok in blok.body" 
+          v-for="blok in content.body" 
           :key="blok._uid" 
           :blok="blok" 
           :is="blok.component"/>
@@ -83,7 +82,7 @@
 <script>
 export default {
   props: {
-    blok: {
+    content: {
       type: Object,
       default: function() {
         return {}
