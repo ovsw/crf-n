@@ -1,9 +1,14 @@
 <template>
   <nav id="main-menu">
     <ul>
-      <li><a href="/">Home</a></li>
+      <li 
+        v-for="navItem in $store.state.settings.main_navi" 
+        :key="navItem.id">
+        <nuxt-link :to="'/'+ navItem.link.cached_url ">{{ navItem.name }}</nuxt-link>
+      </li>
+      <!-- <li><a href="/">Home</a></li>
       <li><a href="/about/">About us</a></li>
-      <li><a href="/contact/">Contact</a></li>
+      <li><a href="/contact/">Contact</a></li> -->
     </ul>
   </nav>
 </template>
@@ -11,6 +16,7 @@
 <script>
 export default {
   mounted() {
+    console.log(this.$store.state.settings.main_navi)
     $(document).ready(function() {
       $('#main-menu').mmenu({
         extensions: ['pagedim-black'],
